@@ -19,3 +19,7 @@ This version introduces a maintainable architecture:
 5. Click **Push origin**.
 
 Do not move files out of `css`, `js`, `assets`, or `posts`.
+
+## Version 0.3.1
+
+Every “View project” link on the Projects page now opens a dedicated project post. Added dedicated pages for Tutelarius Simulator and Selected Translation Work.
