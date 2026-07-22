@@ -1,9 +1,5 @@
-# Xinyu's Portfolio — Phase 1
+# Xinyu's Portfolio — Phase 2
 
-Contains the homepage structure, shared palette, responsive navigation,
-fast scale animation, footer, and image placeholders.
+Upload the contents of this folder to the repository root. Keep css, js, assets, and posts as folders.
 
-Preview: double-click `index.html`.
-
-Upload the contents of this folder directly to the root of your
-`USERNAME.github.io` repository.
+Includes all main pages, project dropdown, accordions, six post templates, PDF/video placeholders, Aquarium template slots, and preserved Gluttonous Snake image positions.
