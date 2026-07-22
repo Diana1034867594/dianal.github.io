@@ -1,5 +1,21 @@
-# Xinyu's Portfolio — Phase 2
+# Xinyu's Portfolio — Version 0.3
 
-Upload the contents of this folder to the repository root. Keep css, js, assets, and posts as folders.
+This version introduces a maintainable architecture:
 
-Includes all main pages, project dropdown, accordions, six post templates, PDF/video placeholders, Aquarium template slots, and preserved Gluttonous Snake image positions.
+- Shared navigation and footer in `js/components.js`
+- One global stylesheet and behavior file
+- Root and nested post links resolve correctly
+- Central image, PDF, and video folders
+- Projects dropdown navigation
+- Aquarium template placeholders preserved
+- Gluttonous Snake missing-image positions preserved
+
+## Update with GitHub Desktop
+
+1. Open the cloned `dianal.github.io` folder.
+2. Copy everything inside this package into that folder.
+3. Choose **Replace the files in the destination**.
+4. In GitHub Desktop, commit with `Version 0.3 site architecture`.
+5. Click **Push origin**.
+
+Do not move files out of `css`, `js`, `assets`, or `posts`.
