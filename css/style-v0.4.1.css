@@ -66,3 +66,59 @@
  .project-visual-placeholder,.project-card-featured .project-visual-placeholder,.project-card-wide .project-visual-placeholder{aspect-ratio:4/3}
  .project-arrow{width:2.6rem;height:2.6rem}
 }
+
+
+/* =========================================================
+   Version 0.5 — Tutelarius case study
+   ========================================================= */
+.project-cover-image{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid rgba(88,59,31,.18);transition:transform 450ms cubic-bezier(.2,.75,.2,1)}
+.project-visual:hover .project-cover-image{transform:scale(1.025)}
+.case-study{max-width:1200px;padding:clamp(4rem,8vw,8rem) 0}
+.case-hero{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,6rem);align-items:end;padding-bottom:clamp(4rem,7vw,7rem)}
+.case-hero h1{font-size:clamp(4.6rem,9vw,9rem);line-height:.76;letter-spacing:-.055em;margin:1rem 0 2rem}
+.case-hero-media{margin:0;overflow:hidden}
+.case-hero-media img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.case-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin:2rem 0 0;padding:0;list-style:none}
+.case-tags li{padding:.45rem .78rem;border:1px solid var(--line);border-radius:999px;font-size:.7rem;background:rgba(229,224,218,.5)}
+.case-summary{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.case-summary>div{padding:1.5rem 1.3rem;border-right:1px solid var(--line)}
+.case-summary>div:last-child{border-right:0}
+.case-summary p{margin:0;font-size:.82rem}
+.case-label,.case-kicker{font-size:.7rem!important;letter-spacing:.13em;text-transform:uppercase;color:var(--olive);margin-bottom:.6rem!important}
+.case-section{padding:clamp(4rem,8vw,8rem) 0;border-bottom:1px solid var(--line)}
+.case-section h2{max-width:900px;margin-bottom:2rem}
+.case-two-column{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,7vw,8rem);align-items:start}
+.case-intro{max-width:850px;font-size:1.08rem;margin-bottom:2.5rem}
+.case-image{margin:2.5rem 0 0}
+.case-image img{display:block;width:100%;height:auto}
+.case-image-contained img{max-height:760px;object-fit:contain;background:#fff}
+.case-image figcaption,.case-gallery figcaption,.case-story-grid figcaption{margin-top:.65rem;font-size:.72rem;opacity:.75}
+.case-span{grid-column:1/-1}
+.case-gallery{display:grid;gap:1rem;margin-top:2rem}
+.case-gallery-three{grid-template-columns:repeat(3,1fr)}
+.case-gallery figure,.case-story-grid figure{margin:0}
+.case-gallery img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.compact-gallery{margin-top:3rem}
+.case-story-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,3vw,2.7rem);margin-top:2.5rem}
+.case-story-grid img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.video-shell{position:relative;aspect-ratio:16/9;background:#1e1e1e;overflow:hidden}
+.video-shell iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-fallback{margin-top:1rem;font-size:.8rem}
+.additional-clip{margin-top:2rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.additional-clip summary{font-family:"Libre Baskerville",Georgia,serif;font-size:.85rem;padding:1.2rem 0;cursor:pointer}
+.additional-clip video{display:block;width:100%;max-height:720px;margin-bottom:1.5rem;background:#111}
+@media(max-width:900px){
+ .case-hero,.case-two-column{grid-template-columns:1fr}
+ .case-hero h1{font-size:clamp(4.3rem,17vw,7rem)}
+ .case-summary{grid-template-columns:repeat(2,1fr)}
+ .case-summary>div:nth-child(2){border-right:0}
+ .case-summary>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .case-gallery-three{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .case-study{padding-top:3rem}
+ .case-summary{grid-template-columns:1fr}
+ .case-summary>div{border-right:0;border-bottom:1px solid var(--line)!important}
+ .case-summary>div:last-child{border-bottom:0!important}
+ .case-story-grid{grid-template-columns:1fr}
+}

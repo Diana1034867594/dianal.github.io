@@ -1,1 +1,108 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tutelarius Simulator | Xinyu's Site</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style-v0.4.1.css"><script defer src="../js/components-v0.4.1.js"></script><script defer src="../js/main.js"></script></head><body data-current="posts" data-base="../"><div data-site-header></div><main><article class="article-shell page-shell"><header class="article-header"><p class="post-date">May 6</p><h1>Tutelarius Simulator</h1><p class="lede">A game-localization case study covering content preparation, implementation, pseudo-localization, and LQA.</p></header><section class="article-section"><h2>Project Overview</h2><p>This case study preserves the dedicated page for the Tutelarius Simulator game-localization project. Add the final project description, team responsibilities, source files, implementation notes, and LQA findings here.</p></section><section class="article-section"><h2>Workflow</h2><ol><li>Project preparation and pseudo-localization</li><li>UI and dialogue localization</li><li>String implementation</li><li>Layout and functional testing</li><li>Final linguistic QA</li></ol></section><section class="article-section"><h2>Project Images</h2><div class="image-frame article-image" data-label="assets/images/tutelarius-overview.jpg"><span>PROJECT IMAGE PLACEHOLDER</span></div><div class="image-frame article-image" data-label="assets/images/tutelarius-ui.jpg"><span>UI SCREENSHOT PLACEHOLDER</span></div><div class="image-frame article-image" data-label="assets/images/tutelarius-final.jpg"><span>FINAL BUILD PLACEHOLDER</span></div></section><section class="article-section"><h2>Reflection</h2><p class="placeholder-copy">Add your final reflection, challenges, solutions, and project outcomes here.</p></section><nav class="article-nav"><a href="../posts.html">← Back to posts</a><a href="../projects.html">View all projects →</a></nav></article></main><div data-site-footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Tutelarius Simulator game development and multilingual localization case study by Xinyu Liao.">
+<title>Tutelarius Simulator | Xinyu Liao</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style-v0.4.1.css">
+<script defer src="../js/components-v0.4.1.js"></script>
+<script defer src="../js/main.js"></script>
+</head>
+<body data-current="projects" data-base="../">
+<div data-site-header></div>
+<main>
+<article class="case-study page-shell">
+<header class="case-hero reveal">
+  <div class="case-hero-copy">
+    <p class="project-type">Game Development · Multilingual Localization</p>
+    <h1>Tutelarius<br>Simulator</h1>
+    <p class="lede">A narrative game created and localized into Simplified Chinese, English, and French, with multilingual UI, dialogue, asset coordination, implementation, and linguistic QA.</p>
+    <ul class="case-tags"><li>Unity</li><li>Game Localization</li><li>English</li><li>French</li><li>LQA</li></ul>
+  </div>
+  <figure class="case-hero-media">
+    <img src="../assets/images/tutelarius/tutelarius-cover.png" alt="Tutelarius Simulator title screen with multilingual menu design">
+  </figure>
+</header>
+
+<section class="case-summary reveal">
+  <div><p class="case-label">Project</p><p>Original narrative game and localization project</p></div>
+  <div><p class="case-label">Languages</p><p>Simplified Chinese, English, French</p></div>
+  <div><p class="case-label">Focus</p><p>UI, dialogue, implementation, multilingual QA</p></div>
+  <div><p class="case-label">Tools</p><p>Unity localization tables, spreadsheets, multimedia assets</p></div>
+</section>
+
+<section class="case-section case-two-column reveal">
+  <div><p class="case-kicker">01 · Overview</p><h2>Building the game and its localization together</h2></div>
+  <div>
+    <p>Tutelarius Simulator was developed as a multilingual game rather than translated only after the build was complete. The project combined narrative design, asset preparation, UI planning, string management, translation, implementation, and testing.</p>
+    <p>Designing and localizing at the same time made the process challenging but rewarding. It also revealed how small technical choices—frame rate, text containers, buttons, and scene behavior—can directly affect the player experience.</p>
+  </div>
+</section>
+
+<section class="case-section reveal">
+  <p class="case-kicker">02 · Planning</p><h2>Asset management and production workflow</h2>
+  <p class="case-intro">A shared asset tracker organized menus, backgrounds, fonts, scripts, audio, maps, scenes, and priorities. This helped the team see what was ready, what was still in progress, and which assets were essential for each stage of the game.</p>
+  <figure class="case-image case-image-contained"><img src="../assets/images/tutelarius/tutelarius-asset-management.jpg" alt="Asset management spreadsheet for Tutelarius Simulator"><figcaption>Asset tracker used to coordinate visual, audio, text, and scene resources.</figcaption></figure>
+</section>
+
+<section class="case-section reveal">
+  <p class="case-kicker">03 · Multilingual UI</p><h2>One interface, three languages</h2>
+  <p class="case-intro">The menu and pause interfaces were implemented in Simplified Chinese, English, and French. Comparing the screens side by side made it easier to identify text expansion, alignment, font, and button-size issues.</p>
+  <div class="case-gallery case-gallery-three">
+    <figure><img src="../assets/images/tutelarius/tutelarius-menu-zh.png" alt="Chinese Tutelarius Simulator menu"><figcaption>Simplified Chinese</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-menu-en.png" alt="English Tutelarius Simulator menu"><figcaption>English</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-menu-fr.png" alt="French Tutelarius Simulator menu"><figcaption>French</figcaption></figure>
+  </div>
+  <div class="case-gallery case-gallery-three compact-gallery">
+    <figure><img src="../assets/images/tutelarius/tutelarius-pause-zh.png" alt="Chinese pause menu"><figcaption>Chinese pause menu</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-pause-en.png" alt="English pause menu"><figcaption>English pause menu</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-settings-fr.png" alt="French settings panel"><figcaption>French settings panel</figcaption></figure>
+  </div>
+</section>
+
+<section class="case-section case-two-column reveal">
+  <div><p class="case-kicker">04 · Localization Engineering</p><h2>Managing strings inside Unity</h2></div>
+  <div><p>Unity localization tables kept the Chinese source, English translation, and French translation aligned by string key. This structure supported reusable strings across menus, location descriptions, dialogue, and choices while making later revisions easier to track.</p></div>
+  <figure class="case-image case-span"><img src="../assets/images/tutelarius/tutelarius-localization-table.png" alt="Unity localization table containing Chinese, English, and French strings"><figcaption>Localized strings organized by key in Unity.</figcaption></figure>
+</section>
+
+<section class="case-section reveal">
+  <p class="case-kicker">05 · Player Experience</p><h2>From world map to branching narrative</h2>
+  <p class="case-intro">The localized content appears across map descriptions, exploration scenes, dialogue, and player choices. The screenshots below show how language and interface design work together throughout the player journey.</p>
+  <div class="case-story-grid">
+    <figure><img src="../assets/images/tutelarius/tutelarius-map-location.png" alt="Localized map location description"><figcaption>Location introduction</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-gameplay-path.png" alt="Character traveling through a rural path"><figcaption>Exploration scene</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-gameplay-village.png" alt="Character interacting with a village resident"><figcaption>NPC interaction</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-dialogue-pier.png" alt="Localized dialogue at the pier"><figcaption>Contextual dialogue</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-choice-ui.png" alt="Localized player choice interface"><figcaption>Branching choice</figcaption></figure>
+    <figure><img src="../assets/images/tutelarius/tutelarius-dialogue-temple.png" alt="Localized dialogue in the temple scene"><figcaption>Narrative scene</figcaption></figure>
+  </div>
+</section>
+
+<section class="case-section reveal">
+  <p class="case-kicker">06 · Demo</p><h2>Complete playthrough in three languages</h2>
+  <div class="video-shell">
+    <iframe src="https://midd.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=926481a5-d0f2-4479-b2cf-b24c005df524&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&captions=false&interactivity=all" title="Tutelarius Simulator complete playthrough" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p class="video-fallback">If the embedded player does not load, <a href="https://midd.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=926481a5-d0f2-4479-b2cf-b24c005df524" target="_blank" rel="noopener noreferrer">open the full demonstration in Panopto</a>.</p>
+  <details class="additional-clip"><summary>View an additional project clip</summary><video controls preload="metadata"><source src="../assets/videos/tutelarius-project-clip.mp4" type="video/mp4">Your browser does not support embedded video.</video></details>
+</section>
+
+<section class="case-section case-two-column reveal">
+  <div><p class="case-kicker">07 · Reflection</p><h2>Localization is part of the product, not a final add-on</h2></div>
+  <div>
+    <p>This project reinforced the value of planning for localization early. Text length, fonts, buttons, dialogue containers, scene timing, and technical behavior all influenced whether the localized experience felt intentional.</p>
+    <p>It also showed the importance of testing content in context: a string can look correct in a table yet still fail when placed inside a live interface or animated scene.</p>
+  </div>
+  <figure class="case-image case-span"><img src="../assets/images/tutelarius/tutelarius-ending.png" alt="Tutelarius Simulator ending screen"><figcaption>One of the game endings.</figcaption></figure>
+</section>
+
+<nav class="article-nav"><a href="../projects.html">← Back to projects</a><a href="gluttonous-snake.html">Next case study →</a></nav>
+</article>
+</main>
+<div data-site-footer></div>
+</body></html>
